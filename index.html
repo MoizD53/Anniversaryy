@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moiz ❤️ Rudraa – 2nd Anniversary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@500;600;700&family=Italiana&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NOISE / GRAIN OVERLAY ============ -->
+<div class="grain-overlay"></div>
+
+<!-- ============ LOGIN / LOCK SCREEN ============ -->
+<div id="lockScreen" class="lock-screen">
+  <div class="lock-bg-glow"></div>
+  <div class="lock-petals" id="lockPetals"></div>
+
+  <div class="lock-content">
+    <div class="lock-heart-wrap">
+      <svg id="lockHeart" class="lock-heart" viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 85 C 20 60, 0 40, 0 22 C 0 6, 14 -2, 28 4 C 38 8, 46 18, 50 26 C 54 18, 62 8, 72 4 C 86 -2, 100 6, 100 22 C 100 40, 80 60, 50 85 Z"/>
+      </svg>
+      <div class="heart-pulse-ring"></div>
+    </div>
+
+    <p class="lock-eyebrow">A LOVE STORY, CONTINUED</p>
+    <h1 class="lock-title">Moiz <span class="heart-glyph">❤</span> Rudraa</h1>
+    <p class="lock-sub">This door only opens for one date in our story.</p>
+
+    <form id="lockForm" class="lock-form" autocomplete="off">
+      <label for="dateInput" class="lock-label">Enter our proposal date</label>
+      <input
+        type="text"
+        id="dateInput"
+        class="lock-input"
+        placeholder="DD-MM-YYYY"
+        inputmode="numeric"
+        autocomplete="off"
+      >
+      <button type="submit" class="lock-btn">
+        <span>Unlock Our Story</span>
+      </button>
+      <p id="lockError" class="lock-error"></p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ MAIN SITE ============ -->
+<div id="mainSite" class="main-site">
+
+  
+
+  <!-- floating nav dot (secret heart trigger is separate, bottom-fixed) -->
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero">
+    <div class="hero-hearts" id="heroHearts"></div>
+    <div class="hero-vignette"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">SINCE 20 JUNE 2024</p>
+      <h1 class="hero-names reveal-up" style="animation-delay:.15s">
+        <span class="name">Moiz</span>
+        <span class="hero-heart-icon">❤</span>
+        <span class="name">Rudraa</span>
+      </h1>
+      <h2 class="hero-heading reveal-up" style="animation-delay:.3s">2 Years of Love, Laughter &amp; Memories</h2>
+      <p class="hero-tagline reveal-up" style="animation-delay:.45s">Two hearts, one journey, countless beautiful moments — and many more to come.</p>
+
+      <button id="beginJourneyBtn" class="btn-primary reveal-up" style="animation-delay:.6s">
+        <span>Begin Our Journey</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v11M8 13l-5-5M8 13l5-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="scroll-cue">
+      <span></span>
+      <p>scroll</p>
+    </div>
+  </section>
+
+  <!-- ============ LOVE COUNTER ============ -->
+  <section id="counter" class="counter-section">
+    <div class="section-deco-line"></div>
+    <p class="section-eyebrow fade-in-scroll">EVERY SECOND, WITH YOU</p>
+    <h2 class="section-title fade-in-scroll">Our Love, Counted</h2>
+
+    <div class="counter-grid fade-in-scroll">
+      <div class="counter-card">
+        <span id="countDays" class="counter-num">0000</span>
+        <span class="counter-label">Days</span>
+      </div>
+      <div class="counter-divider">:</div>
+      <div class="counter-card">
+        <span id="countHours" class="counter-num">00</span>
+        <span class="counter-label">Hours</span>
+      </div>
+      <div class="counter-divider">:</div>
+      <div class="counter-card">
+        <span id="countMinutes" class="counter-num">00</span>
+        <span class="counter-label">Minutes</span>
+      </div>
+      <div class="counter-divider">:</div>
+      <div class="counter-card">
+        <span id="countSeconds" class="counter-num">00</span>
+        <span class="counter-label">Seconds</span>
+      </div>
+    </div>
+    <p class="counter-footnote fade-in-scroll">...and counting, forever.</p>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section id="timeline" class="timeline-section">
+    <p class="section-eyebrow fade-in-scroll">OUR STORY SO FAR</p>
+    <h2 class="section-title fade-in-scroll">The Timeline of Us</h2>
+
+    <div class="timeline-wrap">
+      <div class="timeline-line" id="timelineLine"></div>
+
+      <div class="timeline-item fade-in-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">20 June 2024</span>
+          <h3>First Proposal</h3>
+          <p>The moment I asked, and you said yes — the day our forever quietly began.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Summer 2024</span>
+          <h3>First Date</h3>
+          <p>Nervous smiles, endless conversation, and the first time the world felt quieter around us.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Summer 2024</span>
+          <h3>First Selfie</h3>
+          <p>An awkward angle, a perfect memory — the first of thousands to come.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">December 2024</span>
+          <h3>First Birthday Together</h3>
+          <p>Candles, cake, and the quiet joy of celebrating you with you, for the first time.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">20 June 2025</span>
+          <h3>1 Year Anniversary</h3>
+          <p>One year of choosing each other, again and again, without a single doubt.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in-scroll">
+        <div class="timeline-dot timeline-dot-final"></div>
+        <div class="timeline-card timeline-card-final">
+          <span class="timeline-date">20 June 2026</span>
+          <h3>2 Year Anniversary</h3>
+          <p>Two years in, and you're still my favorite story to tell — here's to forever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="gallery-section">
+    <p class="section-eyebrow fade-in-scroll">FRAMED MOMENTS</p>
+    <h2 class="section-title fade-in-scroll">Our Gallery</h2>
+    <p class="section-sub fade-in-scroll">Click any photo to relive the moment.</p>
+
+    <div class="gallery-grid fade-in-scroll">
+      <!-- Replace each src below with your own photo, e.g. src="images/photo1.jpg" -->
+      <div class="gallery-item" data-caption="Our first photo together">
+        <img src="C:\Users\hatim\OneDrive\Desktop\Anniversary\images\gallery1.jpeg" alt="Memory 1" loading="lazy">
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-caption="That golden evening">
+        <img src="C:\Users\hatim\OneDrive\Desktop\Anniversary\images\gallery2.jpeg" alt="Memory 2" loading="lazy">
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-caption="Laughing about nothing">
+        <img src="C:\Users\hatim\OneDrive\Desktop\Anniversary\images\gallery3.jpeg" alt="Memory 3" loading="lazy">
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-caption="Our favorite spot">
+        <img src="C:\Users\hatim\OneDrive\Desktop\Anniversary\images\gallery4.jpeg" alt="Memory 4" loading="lazy">
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-caption="Celebrating together">
+        <img src="C:\Users\hatim\OneDrive\Desktop\Anniversary\images\gallery5.jpeg" alt="Memory 5" loading="lazy">
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-caption="A quiet, perfect day">
+        <img src="C:\Users\hatim\OneDrive\Desktop\Anniversary\images\gallery6.jpeg" alt="Memory 6" loading="lazy">
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close">&times;</button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- ============ WHY I LOVE YOU ============ -->
+  <section id="why" class="why-section">
+    <p class="section-eyebrow fade-in-scroll">A FEW OF THE REASONS</p>
+    <h2 class="section-title fade-in-scroll">Why I Love You</h2>
+
+    <div class="why-grid fade-in-scroll">
+      <div class="why-card">
+        <div class="why-icon">✦</div>
+        <h3>Your Smile</h3>
+        <p>It's the first thing I look for in every room, and still my favorite sight.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">✦</div>
+        <h3>Your Kindness</h3>
+        <p>The gentle way you treat the world has taught me what real warmth looks like.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">✦</div>
+        <h3>Your Support</h3>
+        <p>In every storm, you've been my steady, quiet shore.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">✦</div>
+        <h3>Your Laugh</h3>
+        <p>Loud, unfiltered, completely yours — it's my favorite sound in the world.</p>
+      </div>
+      <div class="why-card why-card-wide">
+        <div class="why-icon">✦</div>
+        <h3>Everything About You</h3>
+        <p>It was never just one thing. It was always, simply, all of you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOVE LETTER ============ -->
+  <section id="letter" class="letter-section">
+    <p class="section-eyebrow fade-in-scroll">SOMETHING I WROTE FOR YOU</p>
+    <h2 class="section-title fade-in-scroll">A Love Letter</h2>
+    <p class="section-sub fade-in-scroll">Tap the envelope to open it.</p>
+
+    <div class="envelope-stage fade-in-scroll">
+      <div id="envelope" class="envelope">
+        <div class="envelope-back"></div>
+        <div class="letter-paper" id="letterPaper">
+          <p class="letter-greeting">My Dearest Rudraa,</p>
+          <p>Every day with you feels magical. Thank you for every smile, every laugh, and every beautiful memory.</p>
+          <p class="letter-line">Happy 2nd Anniversary <span class="heart-glyph">❤</span></p>
+          <p class="letter-sign">Forever Yours,<br>Moiz</p>
+        </div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-seal">❤</div>
+      </div>
+      <p class="envelope-hint" id="envelopeHint">tap to open</p>
+    </div>
+  </section>
+
+  <!-- ============ MEMORY STARS ============ -->
+  <section id="stars" class="stars-section">
+    <div class="stars-sky" id="starsSky"></div>
+    <div class="shooting-stars" id="shootingStars"></div>
+
+    <div class="stars-content">
+      <p class="section-eyebrow fade-in-scroll light">UNDER OUR SKY</p>
+      <h2 class="section-title light fade-in-scroll">Memory Stars</h2>
+      <p class="section-sub light fade-in-scroll">Click a star to reveal a memory.</p>
+    </div>
+  </section>
+
+  <!-- Memory card modal -->
+  <div id="memoryModal" class="memory-modal">
+    <div class="memory-modal-card">
+      <button id="memoryModalClose" class="memory-modal-close" aria-label="Close">&times;</button>
+      <div class="memory-modal-star">✦</div>
+      <h3 id="memoryModalTitle"></h3>
+      <p id="memoryModalText"></p>
+    </div>
+  </div>
+
+  <!-- ============ FINAL SECTION ============ -->
+  <section id="final" class="final-section">
+    <div class="final-glow"></div>
+    <div class="final-hearts" id="finalHearts"></div>
+
+    <div class="final-content">
+      <div class="final-heart">❤</div>
+      <h2 class="final-title fade-in-scroll">Happy 2nd Anniversary, Rudraa <span class="heart-glyph">❤</span></h2>
+      <p class="final-sub fade-in-scroll">Here's to the years already written, and every page still left to fill — together.</p>
+      <button id="replayBtn" class="btn-primary fade-in-scroll">
+        <span>Replay Our Journey</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 14V3M8 3l5 5M8 3L3 8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="final-signature">Moiz <span class="heart-glyph">❤</span> Rudraa — Est. 20.06.2024</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============ SECRET HEART EASTER EGG ============ -->
+<button id="secretHeart" class="secret-heart" aria-label="Secret heart">❤</button>
+
+<div id="secretOverlayBlur" class="secret-overlay-blur"></div>
+
+<div id="secretPopup" class="secret-popup">
+  <div class="secret-popup-card">
+    <div id="secretHeartRain" class="secret-heart-rain"></div>
+    <div class="secret-popup-heart">❤</div>
+    <h3 class="secret-popup-title">I LLOGEE YOU <span class="heart-glyph">❤</span></h3>
+    <button id="secretCloseBtn" class="btn-primary secret-close-btn">
+      <span>Love You Too ❤</span>
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
